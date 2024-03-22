@@ -6,10 +6,22 @@ Created on Fri Mar 22 16:15:59 2024
 """
 
 class Praktikan:
-    def __init__(self, nama, nim, fakultas, hobi):
+    def __init__(self):
+        self.nama = None
+        self.nim = None
+        self.fakultas = None
+        self.hobi = None
+    
+    def set_nama(self, nama):
         self.nama = nama
+    
+    def set_nim(self, nim):
         self.nim = nim
+    
+    def set_fakultas(self, fakultas):
         self.fakultas = fakultas
+    
+    def set_hobi(self, hobi):
         self.hobi = hobi
     
     def tampilkan_identitas(self):
@@ -17,8 +29,12 @@ class Praktikan:
         print(f"Saya dari fakultas {self.fakultas}.")
         print(f"Hobi saya adalah {self.hobi}")
 
-# Membuat objek praktikan
-praktikan1 = Praktikan("Fairuz Maulidya", "064002100018", "Teknik Informatika", "Memasak")
+# Membuat objek praktikan dan mengatur atribut-atributnya satu per satu
+praktikan1 = Praktikan()
+praktikan1.set_nama("Fairuz Maulidya")
+praktikan1.set_nim("064002300018")
+praktikan1.set_fakultas("Teknik Informatika")
+praktikan1.set_hobi("Memasak")
 
 # Menampilkan identitas praktikan
 print("----PROGRAM MENAMPILKAN IDENTITAS-----")
